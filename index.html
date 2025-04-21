@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор сопротивления резисторов</title>
+    <meta name="description" content="Калькулятор сопротивления резисторов по цветным полосам.">
+    <meta name="keywords" content="резисторы, сопротивление, электроника, расчет сопротивления, калькулятор сопротивления">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Калькулятор сопротивления резисторов</h1>
+        <form id="resistorForm">
+            <div class="form-group">
+                <label for="numBands">Количество полос:</label>
+                <select id="numBands" onchange="updateBands()">
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                </select>
+            </div>
+            <div id="bandsContainer">
+                <!-- Полоски будут добавлены здесь динамически -->
+            </div>
+            <button type="button" onclick="calculateResistance()">Рассчитать</button>
+        </form>
+        <p id="result"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
