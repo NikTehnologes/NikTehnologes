@@ -1,0 +1,23 @@
+search-engine/index.html
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Мини-поисковик</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Мини-поисковик</h1>
+  <input 
+    type="text" 
+    id="search-box" 
+    placeholder="Введите запрос..." 
+    autocomplete="off"
+  >
+  <div id="results"></div>
+  <div id="loading">Ищем ещё результаты...</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
